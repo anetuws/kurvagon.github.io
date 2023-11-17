@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://64.media.tumblr.com/fd5267ff1121b0d3eb331a2bf831f0de/tumblr_meols6ozIo1qg39ewo1_500.gif') center center;
+            background-size: cover;
+            transition: background 0.5s ease;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+        }
+        .navbar a {
+            color: #FFFFFF;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        .jumbotron {
+            background: url('https://i.ibb.co/C0GRRL1/Picsart-23-11-17-18-39-44-934.jpg') center center;
+            background-size: cover;
+            color: #FA5F55;
+            transition: color 0.5s ease;
+        }
+        .dark-mode .navbar {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        .dark-mode .navbar a {
+            color: #000000;
+        }
+        .dark-mode .jumbotron {
+            color: #000000;
+        }
+    </style>
+    <title>KURVAGON - Amatérska Polorgarnizácia</title>
+</head>
+<body>
+
+   
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto">
+            <img src="https://i.ibb.co/Hzkjbw5/Picsart-23-11-17-17-35-40-260.png" height="60" width="100">
+        </div>
+    </header>
+
+    <!-- Bootstrap Jumbotron -->
+    <div class="jumbotron text-center">
+        <br>
+        <h2 class="text-2xl font-bold mb-4 red-text">Vitajte v KURVAGON</h2>
+        <p class="text-xl font-bold">Amatérska Polorgarnizácia MMA</p>
+        <p class="text-white">KURVAGON ponúka vzrušujúce zápasy a nespočetné množstvo adrenalínu!</p>
+        <br>
+         <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#">Domov</a>
+        <a href="#">Zápasy</a>
+        <a href="#">Účastníci</a>
+        <a href="#">O nás</a>
+        <a href="#">Kontakt</a>
+        <a href="#">Rola MMA</a>
+        
+    </nav>
+    </div>
+    <br>
+    <img src="https://i.ibb.co/k5ds4Xk/Picsart-23-11-17-18-23-07-262.png" />
+
+    <!-- Newest Fight Banner -->
+    <section class="container mx-auto my-8">
+        <div class="bg-white p-4 rounded-md shadow-md flex items-center justify-between">
+            <img src="https://i.ibb.co/B66x8xD/Picsart-23-11-17-17-43-09-958.png" alt="Fogos" class="w-1/4">
+            <div class="text-center">
+                <p class="text-xl font-bold" "lead red">VS</p>
+                <p class="text-gray-500">Dátum: December 12, 2023</p>
+            </div>
+            <img src="https://i.ibb.co/wKNf9rJ/Picsart-23-11-17-17-46-29-463.png" alt="Fetak" class="w-1/4">
+        </div>
+    </section>
+
+    <!-- Attendants -->
+    <section class="container mx-auto my-8">
+        <h2 class="text-2xl font-bold mb-4">Účastníci KURVAGON (Celkom: 28)</h2>
+        <ul class="list-disc pl-8">
+            <li>Albert Knapik, Peťo Čekel, Fogoš Gabčo, Adam Krull, Peťo Kuzmiak, Kristián Bednárčik, Kristián Lukáč, Zdenko Lipovsk, Filip Šarišský, Dávid Švec, Marko Barabas, Ferdinand Šiška, Dávid Buralli, Jožko Čonka, Marián Budzak, Cico Citriak, Maroš Šembera, Mišo Orolin & Majdan, Marko Lavki, Filip Kendra, Hudák, Ján Včelár, Matúš Kovalcik a ďalší..</li>
+        </ul>
+    </section>
+    
+    <h1>Kto sme?</h1>
+    <p>Kurvagon je súhrn amatérskych bojovníkov nových a prerobených bojových umení. Jej účastníkmi sú absolventi školy Technickej SOŠT v Poprade. Kurvagon bol vynájdený Marošom Tlakerom a prispievateľon Fogošom Gabčom. Kurvagon do dnešného dňa usporiada zápasy počas školského vyučovania a buduje si slovo.</p>
+    <img src="https://i.ibb.co/YWz09Zw/Picsart-23-11-17-19-17-12-586.jpg" />
+
+    <!-- Footer -->
+    <footer class="bg-red-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 KURVAGON MMA Fights. Všetky práva vyhradené.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+  </html>
+  
